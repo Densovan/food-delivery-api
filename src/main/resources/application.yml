@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: food-delivery
+  datasource:
+    url: jdbc:postgresql://localhost:5433/food-delivery-api
+    username: admin_user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: on
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
